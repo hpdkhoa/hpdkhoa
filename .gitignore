@@ -4,3 +4,5 @@ LeetCode/.idea/modules.xml
 LeetCode/.idea/LeetCode.iml
 LeetCode/main.go
 DB/.idea/DB.iml
+*.swp
+*.save
