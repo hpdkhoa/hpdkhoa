@@ -28,7 +28,7 @@ func main() {
 	defer db.Close()
 
 	start := time.Now()
-	for i := 1; i <= 10; i++ {
+	for i := 1; i <= 10000000; i++ {
 		maxid := 0
 		sqlStatement := `SELECT last_value FROM userlogin_id_seq;`
 		row := db.QueryRow(sqlStatement)
@@ -54,3 +54,4 @@ func main() {
 //4.303814682s
 //43.43147847s
 //1.454968735s
+//10m32.879536743s
